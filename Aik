@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiveHope - Donate & Make a Change</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-600 text-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      <h1 class="text-2xl font-bold">GiveHope</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="hover:text-gray-200 font-semibold">About</a>
+        <a href="#donate" class="hover:text-gray-200 font-semibold">Donate</a>
+        <a href="#contact" class="hover:text-gray-200 font-semibold">Contact</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-green-500 text-white text-center space-y-2 py-4">
+      <a href="#about" class="block">About</a>
+      <a href="#donate" class="block">Donate</a>
+      <a href="#contact" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-[url('assets/images/hero.jpg')] bg-cover bg-center text-white py-40 text-center">
+    <div class="bg-black bg-opacity-50 p-10 rounded-lg inline-block">
+      <h2 class="text-4xl md:text-5xl font-bold mb-5">Make a Difference Today</h2>
+      <p class="mb-8 text-lg md:text-xl">Your donation can change lives and bring hope to those in need.</p>
+      <a href="#donate" class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded font-semibold">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-20 px-5 md:px-0">
+    <div class="bg-white rounded-lg shadow-lg p-10">
+      <h2 class="text-3xl font-bold mb-5 text-green-600">About Our Cause</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">We are dedicated to providing support and resources to those who need it the most. Every contribution helps us reach more people and make a greater impact in our community. Join us in bringing hope and change to lives around the world.</p>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate" class="container mx-auto py-20 px-5 md:px-0">
+    <div class="bg-white rounded-lg shadow-lg p-10 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-green-600">Donate</h2>
+      <!-- Donorbox Embed -->
+      <iframe src="https://donorbox.org/embed/your-donation-form" height="900px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important; border:none; margin:auto; display:block;" seamless="seamless" name="donorbox" scrolling="no" allowpaymentrequest></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto py-20 px-5 md:px-0">
+    <div class="bg-white rounded-lg shadow-lg p-10 text-center">
+      <h2 class="text-3xl font-bold mb-5 text-green-600">Contact Us</h2>
+      <p class="text-gray-700 text-lg mb-2">Email: info@givehope.org</p>
+      <p class="text-gray-700 text-lg mb-2">Phone: +123 456 7890</p>
+      <p class="text-gray-700 text-lg">Address: 123 Charity Street, City, Country</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    &copy; 2025 GiveHope. All Rights Reserved.
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
